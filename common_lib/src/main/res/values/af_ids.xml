@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 给图片标记索引位置 -->
+    <item name="zm_holder_tag_index" type="id"/>
+    <!--  -->
+    <item name="fl_fragment" type="id"/>
+
+</resources>

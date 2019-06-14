@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    api 'com.android.support:appcompat-v7:26.1.0'
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api files('libs/base-adapter-3.0.3.jar')
+    api files('libs/com.mcxiaoke.volley-library-1.0.19.jar')
+    api files('libs/fastjson-1.2.31.jar')
+    api files('libs/grant-permissions-1.1.2.jar')
+    api files('libs/org.apache.http.legacy.jar')
+    api files('libs/zm-bus-event-1.0.jar')
+    api files('libs/zm-http-volley-1.0.jar')
+    api files('libs/zm-imageloader-1.0.jar')
+//    implementation 'com.danikula:videocache:2.7.0'
+
+
+}
